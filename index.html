@@ -41,7 +41,10 @@
                         </div>
                         <div class="flex ml-3 p-2 gap-4 bg-[#F4F7FF] rounded-lg h-28">
                             <button class="btn bg-white rounded-full my-auto"><img class="w-5 my-auto" src="assets/calender.png" alt=""></button>
-                            <p class="my-auto">Wed ,<br> <span class="font-bold">Jul 28 2025</span> </p>
+                            <p class="my-auto">
+                                <span id="dayText">Day</span>, <br> 
+                                <span id="dateText" class="font-bold">Date</span> 
+                             </p>
                         </div>
                     </div>
                     <div class="border-b-2 border-dotted mt-10 w-full"></div>
@@ -127,13 +130,17 @@
                    </div>
                 </div>
                 <!-- history part -->
-                <div class="bg-white row-span-3 flex flex-col  items-center text-center mb-14 rounded-xl">
+                <div class="bg-white row-span-3 flex flex-col  items-center text-center mb-14 rounded-xl p-2">
                     <div class="flex gap-4 mt-6">
                         <img class=" w-6 h-6" src="assets/activity.png" alt="">
                         <h1 class="text-xl font-medium">Activity Log</h1>
                     </div>
-                    <button class="bg-[#3752FD] text-white rounded-lg px-5 py-2 mt-5">Clear History</button>
+                    <button id="history-btn" class="bg-[#3752FD] text-white rounded-lg px-5 py-2 mt-5">Clear History</button>
                     <div class="border-b-2 border-dotted mt-4 w-full"></div>
+
+                    <div id="history-containner">
+
+                    </div>
                 </div>
                 
             </div>
@@ -142,5 +149,7 @@
 
        <script src="scripts/cm-button.js"></script>
        <script src="utilities/utilities.js"></script>
+       <script src="scripts/day-date.js"></script>
+       <script src="scripts/history.js"></script>
 </body>
 </html>
